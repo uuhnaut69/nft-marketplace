@@ -1,0 +1,18 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/hardhat"
+    schedule:
+      interval: "daily"
+    reviewers:
+      - "uuhnaut69"      
+    assignees:
+      - "uuhnaut69"
+  - package-ecosystem: "gomod"
+    directory: "/services/auth"
+    schedule:
+      interval: "daily"
+    reviewers:
+      - "uuhnaut69"      
+    assignees:
+      - "uuhnaut69"
