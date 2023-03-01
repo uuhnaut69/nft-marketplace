@@ -6,10 +6,10 @@ name: Go
 on:
   push:
     paths:
-      - /services/auth/**
+      - "services/auth/**"
   pull_request:
     paths:
-      - /services/auth/**
+      - "services/auth/**"
   
 
 jobs:
