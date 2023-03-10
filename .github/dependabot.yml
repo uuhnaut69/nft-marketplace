@@ -1,18 +1,32 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/hardhat"
+  # Fetch and update latest `npm` packages
+  - package-ecosystem: npm
+    directory: '/dapp'
     schedule:
-      interval: "daily"
+      interval: daily
+      time: '00:00'
+    open-pull-requests-limit: 10
     reviewers:
-      - "uuhnaut69"      
+      - uuhnaut69
     assignees:
-      - "uuhnaut69"
-  - package-ecosystem: "gomod"
-    directory: "/services/auth"
+      - uuhnaut69
+    commit-message:
+      prefix: fix
+      prefix-development: chore
+      include: scope
+  # Fetch and update latest `npm` packages
+  - package-ecosystem: gradle
+    directory: '/authentication'
     schedule:
-      interval: "daily"
+      interval: daily
+      time: '00:00'
+    open-pull-requests-limit: 10
     reviewers:
-      - "uuhnaut69"      
+      - uuhnaut69
     assignees:
-      - "uuhnaut69"
+      - uuhnaut69
+    commit-message:
+      prefix: fix
+      prefix-development: chore
+      include: scope
